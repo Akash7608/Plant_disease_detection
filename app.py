@@ -57,6 +57,8 @@ def analyze():
     os.remove(pathOfFile)
     return jsonify(data)
 
-
-if __name__ == '__main__':
-    app.run(debug=DEVELOPMENT_ENV)
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8001)
+# if __name__ == '__main__':
+#     app.run(debug=DEVELOPMENT_ENV)

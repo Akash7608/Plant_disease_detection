@@ -5,6 +5,7 @@ import numpy as np
 from tensorflow.keras.utils import load_img
 from keras.preprocessing.image import load_img, img_to_array
 from keras.applications.vgg19 import preprocess_input
+from keras_preprocessing.image import load_img
 import json
 import os
 import pandas as pd
