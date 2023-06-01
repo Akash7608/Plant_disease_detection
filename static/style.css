@@ -116,7 +116,7 @@ form {
     border-radius: 24px;
     filter: drop-shadow(2px 2px 2px #000);
     width: 264px;
-    height: 304px;
+    height: 320px;
     background-color: yellow;
     position: fixed;
     padding: 40px 40px 40px;
@@ -124,7 +124,7 @@ form {
     left: 70rem;
     border: 1px rgb(226, 224, 86);
     margin-left: -37rem;
-    margin-top: -2rem;
+    margin-top: -3rem;
     border: 5px solid #fff;
     border-style: outset;
     background-image: linear-gradient(to bottom right, red, yellow);
