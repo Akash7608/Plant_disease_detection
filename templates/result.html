@@ -9,19 +9,19 @@
 <!-- <div class="wrapper"> -->
 <div class="heading">PREDICTING THE RESULTS...</div>
 <div class="text">
+    <div class="text1">
 
-    <h1 id="dis_name">
-        Disease Detected : {{ app_data['disease_name'] }}
-    </h1>
-    <h3 id="treatment">
-        Treatment: {{ app_data['supplement name'] }}
-    </h3>
-    <a href="{{ app_data['buy link'] }}"><img src="{{ app_data['supplement image'] }}" id='img_treat' alt="product image" style="display: block" /></a>
+        <h1 id="dis_name">
+            Disease Detected : {{ app_data['disease_name'] }}
+        </h1>
+        <h3 id="treatment">
+            Treatment: {{ app_data['supplement name'] }}
+        </h3>
+        <a href="{{ app_data['buy link'] }}"><img src="{{ app_data['supplement image'] }}" id='img_treat' alt="product image" style="display: block" /></a>
+    </div>
 </div>
 <!-- </div> -->
-<div class="inner">
-    <div id="result"><b>...Thank You for using AI ENGINE...</b></div>
-</div>
+
 
 <script src="../static/client.js"></script>
 {% endblock %}
