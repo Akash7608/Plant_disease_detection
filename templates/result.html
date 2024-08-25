@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} {% block body %}
+
+<div class="container">
+    <img src="../static/dark_leaf.jpg" id="right" />
+</div>
+<div class="container">
+    <img src="../static/dark_leaf.jpg" id="left" alt="img not display" />
+</div>
+<div class="heading">PREDICTING THE RESULTS...</div>
+<div class="text">
+    <div class="text1">
+        <h1 id="dis_name">
+            Disease Detected : {{ app_data['disease_name'].replace('_', ' ').title() }}
+        </h1>
+        {% if "healthy" in app_data['disease_name'] %}
+        <h3 id="treatment">Treatment: No Treatment Required</h3>
+        {% else %}
+        <h3 id="treatment">Treatment: {{ app_data['supplement name'] }}</h3>
+        <a href="{{ app_data['buy link'] }}">
+            <img src="{{ app_data['supplement image'] }}" id='img_treat' alt="product image" style="display: block" />
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+<script src="../static/client.js"></script>
+{% endblock %}
